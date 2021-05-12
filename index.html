@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+
+<body>
+  <!-- -------------------------Задание 1------------------------- -->
+  <!-- <script>
+    let a = Number(prompt('Введите число от 1 до 999'));
+    function numberToObject(a) {
+      if (a <= 999) {
+        let b = {
+          hundred() {
+            с100 = Math.floor(a / 100);
+            return с100;
+          },
+          dozen() {
+            с10 = Math.floor((a - (с100 * 100)) / 10);
+            return с10;
+          },
+          unit() {
+            с1 = a - ((с100 * 100) + (с10 * 10));
+            return с1;
+          }
+        };
+        b.hundred();
+        b.dozen();
+        b.unit();
+        alert('Сотен: ' + с100 + ' Десятков: ' + с10 + ' Единиц: ' + с1);
+      } else {
+        alert('Упс, число больше,чем нужно');
+      };
+    };
+    numberToObject(a);
+  </script> -->
+
+  <!-- -------------------------Задание 2------------------------- -->
+  <script>
+    let barBasket = [
+      {
+        name: 'beer',
+        amount: 3,
+        price: 130,
+      },
+      {
+        name: 'chips',
+        amount: 1,
+        price: 200
+      },
+      {
+        name: 'fish',
+        amount: 1,
+        price: 100
+      }
+    ];
+
+    function countBasketPrice() {
+      let sumPrice = 0;
+      for (let i = 0; i < barBasket.length; i++) {
+        sumPrice += barBasket[i].amount * barBasket[i].price;
+      }
+      return sumPrice;
+    }
+    console.log(countBasketPrice());
+  </script>
+
+
+</body>
+
+</html>
